@@ -1,8 +1,10 @@
 @page 
 @model IdentityUsersModel
 @using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Authorization
 
 @functions {
+  [Authorize]
   public class IdentityUsersModel: PageModel {
     private UserManager<IdentityUser> userManager;
     
